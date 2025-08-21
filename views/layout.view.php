@@ -102,8 +102,9 @@
         <div class="footer-content">
             <p class="copyright">
                 &copy; <?= date('Y') ?>
-                My Portfolio. All rights reserved.
+                My Portfolio. All rights reserved. Made by Alberte Valentin Madsen -> E-mail: albertevalentinmadsen@gmail.com
             </p>
+
             <p class="footer-links">
                 <a href="/login" class="admin-link">Login</a>
             </p>

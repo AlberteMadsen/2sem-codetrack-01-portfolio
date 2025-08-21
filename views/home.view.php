@@ -16,7 +16,7 @@ $this->extend('layout');
         <style>
             body {
                 margin: 0;
-                background: #d5d5d0;
+                background: #e8e8e7;
                 font-family: sans-serif;
                 text-align: center;
             }
@@ -27,7 +27,7 @@ $this->extend('layout');
 
             header h1 {
                 font-size: 3rem;
-                color: #3498db;
+                color: #5047b5;
                 margin-bottom: 40px;
             }
 
@@ -64,8 +64,6 @@ $this->extend('layout');
         </svg>
     </div>
 </section>
-
-
 
 
 
