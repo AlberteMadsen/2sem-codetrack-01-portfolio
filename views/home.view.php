@@ -10,11 +10,59 @@ $this->extend('layout');
 
 <section class="hero section-padding">
     <div class="container">
-        <h1>Hi, I'm Abigail<span class="accent">Multimedia Designer</span></h1>
+        <h1>Welcome - i'm Alberte<span class="accent">Multimedia Designer</span></h1>
         <p class="tagline">I create modern and user-friendly web solutions with a focus on quality and performance.</p>
         <a href="/contact" class="button">Contact Me</a>
+        <style>
+            body {
+                margin: 0;
+                background: beige;
+                font-family: sans-serif;
+                text-align: center;
+            }
+
+            header {
+                padding: 100px 20px;
+            }
+
+            header h1 {
+                font-size: 3rem;
+                color: #222;
+                margin-bottom: 40px;
+            }
+
+            svg {
+                width: 1200px;
+                height: 100px;
+            }
+
+            path {
+                stroke: #7faaaa; /* rolig blå/grøn tone */
+                stroke-width: 8;
+                fill: none;
+                stroke-linecap: round;
+                animation: wave 3s ease-in-out infinite alternate;
+            }
+
+            @keyframes wave {
+                0% {
+                    d: path("M 50 80 C 150 20, 300 120, 550 60");
+                }
+                100% {
+                    d: path("M 50 60 C 180 100, 320 30, 550 80");
+                }
+            }
+        </style>
+        </head>
+        <svg viewBox="0 0 600 120">
+            <path d="M 50 80 C 150 20, 300 120, 550 60" />
+        </svg>
     </div>
 </section>
+
+
+
+
 
 <section class="intro section-padding">
     <div class="container">
