@@ -85,6 +85,101 @@ $this->extend('layout');
     </div>
 </section>
 
+<br>
+<br><section class="projects-header" style="margin-bottom: 2.5rem;">
+    <div class="container">
+        <h2 class="section-heading" style="font-size:2.2rem; margin-bottom:0.7rem; text-align:left;">Previous Projects</h2>
+        <!-- Bølget blå streg under overskriften -->
+        <svg class="wave-line" viewBox="0 0 400 40" style="width:180px; height:20px; display:block; margin:10px 0 30px 0;">
+            <path d="M 50 30 C 100 10, 200 50, 350 20" fill="none" stroke="#3498db" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+    </div>
+</section>
+
+<section class="slider slider-aboutme" aria-label="Vertikal slider">
+    <div class="slides">
+        <article class="slide" id="s1">Guestbook</article>
+        <article class="slide" id="s2">Iværksætter</article>
+        <article class="slide" id="s3">Soundstage</article>
+        <article class="slide" id="s4">Projekt 4</article>
+        <article class="slide" id="s5">Projekt 5</article>
+    </div>
+</section>
+
+<style>
+    .slider-aboutme {
+        width: 1200px;
+        max-width: 98vw;
+        height: 800px;
+        margin: 0 auto;
+        padding: 50px 0;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+        background: none;
+        box-shadow: none;
+    }
+    .slider-aboutme::-webkit-scrollbar {
+        display: none;
+    }
+    .slider-aboutme {
+        scrollbar-width: none;
+    }
+    .slider-aboutme .slides {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        width: 100%;
+    }
+    .slider-aboutme .slide {
+        scroll-snap-align: center;
+        width: 90%;
+        height: 400px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.7rem;
+        background: #eee;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        transition: transform 0.3s, opacity 0.3s;
+        transform: scale(0.96);
+        opacity: 0.78;
+    }
+    .slider-aboutme .slide:target {
+        transform: scale(1.03);
+        opacity: 1;
+    }
+    .wave-line {
+        width: 180px;
+        height: 20px;
+        margin: 10px 0 30px 0;
+        display: block;
+    }
+    .projects-header .container {
+        max-width: 1200px;
+        padding-left: 2rem;
+    }
+    .section-heading {
+        text-align: left;
+    }
+    @media (max-width: 1200px) {
+        .slider-aboutme {
+            width: 100vw;
+            max-width: 100vw;
+            padding: 10px 0;
+        }
+        .slider-aboutme .slide {
+            width: 98vw;
+        }
+        .projects-header .container {
+            padding-left: 1rem;
+        }
+    }
+</style>
+<br>
+<br>
+
 <section class="quick-links section-padding">
     <div class="container">
         <h2 class="section-heading">Explore More</h2>
