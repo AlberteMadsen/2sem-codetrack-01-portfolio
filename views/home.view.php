@@ -86,10 +86,10 @@ $this->extend('layout');
 </section>
 
 <br>
-<br><section class="projects-header" style="margin-bottom: 2.5rem;">
+<br>
+<section class="projects-header" style="margin-bottom: 2.5rem;">
     <div class="container">
         <h2 class="section-heading" style="font-size:2.2rem; margin-bottom:0.7rem; text-align:left;">Previous Projects</h2>
-        <!-- Bølget blå streg under overskriften -->
         <svg class="wave-line" viewBox="0 0 400 40" style="width:180px; height:20px; display:block; margin:10px 0 30px 0;">
             <path d="M 50 30 C 100 10, 200 50, 350 20" fill="none" stroke="#3498db" stroke-width="4" stroke-linecap="round"/>
         </svg>
@@ -99,7 +99,13 @@ $this->extend('layout');
 <section class="slider slider-aboutme" aria-label="Vertikal slider">
     <div class="slides">
         <article class="slide" id="s1">Guestbook</article>
-        <article class="slide" id="s2">Iværksætter</article>
+        <article class="slide clickable-slide" id="s2">
+            <a href="http://sem1-tema6.maf013.dk/Forside.html" target="_blank" style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:100%; height:100%; color:inherit; text-decoration:none;">
+                <img src="images/visit-koege.jpg" alt="Visit Køge" style="max-width:80%; max-height:220px; border-radius:8px; margin-bottom:1rem; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
+                <span style="font-size:2rem; font-weight:600;"></span>
+                <span style="margin-top:1rem; font-size:1rem; color:#2980b9;">Klik for at besøge siden</span>
+            </a>
+        </article>
         <article class="slide" id="s3">Soundstage</article>
         <article class="slide" id="s4">Projekt 4</article>
         <article class="slide" id="s5">Projekt 5</article>
@@ -163,6 +169,18 @@ $this->extend('layout');
     .section-heading {
         text-align: left;
     }
+
+    /* Hover-effekt på klikbare bokse */
+    .slider-aboutme .clickable-slide {
+        cursor: pointer;
+        transition: box-shadow 0.3s, background 0.3s;
+    }
+    .slider-aboutme .clickable-slide:hover,
+    .slider-aboutme .clickable-slide:focus-within {
+        background: #e3f3fc;
+        box-shadow: 0 8px 32px rgba(52,152,219,0.15);
+    }
+
     @media (max-width: 1200px) {
         .slider-aboutme {
             width: 100vw;
