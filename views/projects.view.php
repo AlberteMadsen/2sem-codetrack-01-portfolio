@@ -126,7 +126,8 @@ $this->extend('layout');
 <main>
     <section class="slider" aria-label="Vertikal slider">
         <div class="slides">
-            <article class="slide" id="s1">Interaktionsdesign</article>
+            <article class="slide" id="s1">Guestbook</article>
+
             <article class="slide" id="s2">Iværksætter</article>
             <article class="slide" id="s3">Soundstage</article>
             <article class="slide" id="s4">Projekt 4</article>
