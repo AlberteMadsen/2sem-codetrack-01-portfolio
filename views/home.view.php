@@ -10,7 +10,7 @@ $this->extend('layout');
 
 <section class="hero section-padding">
     <div class="container">
-        <h1>Welcome - i'm Alberte<span class="accent">Multimedia Designer</span></h1>
+        <h1>Welcome - I'm Alberte<span class="accent"> Multimedia Designer</span></h1>
         <p class="tagline">Welcome to my Portfolio-page.</p>
         <a href="/contact" class="button">Contact Me</a>
         <style>
@@ -21,32 +21,20 @@ $this->extend('layout');
                 text-align: center;
             }
 
-            header {
-                padding: 100px 20px;
-            }
-
-            header h1 {
-                font-size: 3rem;
-                color: #5047b5;
-                margin-bottom: 40px;
-            }
-
             svg {
                 width: 1200px;
                 height: 100px;
             }
 
-
             path {
-                stroke: #3498DBFF; /* rolig blå tone */
-                color: #2980b9;
+                stroke: #3498db;
                 stroke-width: 8;
                 fill: none;
                 stroke-linecap: round;
                 animation: wave 3s ease-in-out infinite alternate;
             }
 
-            @keyframes wave{
+            @keyframes wave {
                 0% {
                     d: path("M 50 80 C 150 20, 300 120, 550 60");
                 }
@@ -54,18 +42,12 @@ $this->extend('layout');
                     d: path("M 50 60 C 180 100, 320 30, 550 80");
                 }
             }
-
-
-
         </style>
-        </head>
         <svg viewBox="0 0 600 120">
             <path d="M 50 80 C 150 20, 300 120, 550 60" fill="#3498db"/>
         </svg>
     </div>
 </section>
-
-
 
 <section class="intro section-padding">
     <div class="container">
@@ -80,11 +62,10 @@ $this->extend('layout');
                           stroke-linecap="round" />
                 </svg>
                 <p>I'm a passionate web developer with a particular interest in user-friendly design and clean code.
-                   Through my projects, I strive to create solutions that not only work well
-                   but also make a real difference for users.</p>
+                    Through my projects, I strive to create solutions that not only work well
+                    but also make a real difference for users.</p>
                 <p>With a keen eye for detail and a commitment to staying current with web technologies,
-                   I bring ideas to life through elegant and efficient code.</p>
-
+                    I bring ideas to life through elegant and efficient code.</p>
             </div>
             <div class="intro-image">
                 <img src="images/profile-landscape.jpg" alt="Headshot of Abigail looking happy" class="profile-image">
@@ -93,8 +74,6 @@ $this->extend('layout');
     </div>
 </section>
 
-<br>
-<br>
 <section class="projects-header" style="margin-bottom: 2.5rem;">
     <div class="container">
         <h2 class="section-heading" style="font-size:2.2rem; margin-bottom:0.7rem; text-align:left;">Previous Projects</h2>
@@ -106,26 +85,73 @@ $this->extend('layout');
 
 <section class="slider slider-aboutme" aria-label="Vertikal slider">
     <div class="slides">
-        <article class="slide" id="s1">Guestbook</article>
 
-        <article class="slide clickable-slide" id="s2" style="display: flex; flex-direction: row; align-items: center; justify-content: start;">
-            <div class="slide-info" style="flex: 1; padding: 2rem;">
-                <h2>Visit Køge</h2>
-                <h4>Her kan du se mit projekt om Køge, hvor jeg har arbejdet med ...</h4>
+        <!-- Slide 1 (Billede med modal) -->
+        <article class="slide clickable-slide" onclick="openModal('fotos/Portfolie-Fritid.png')">
+            <div class="image-wrapper">
+                <img src="fotos/Portfolie-Fritid.png" alt="Best Grapes">
+                <div class="overlay">
+                    <h2>Best Grapes</h2>
+                    <p>Klik for at se billedet i fuld skærm</p>
+                </div>
             </div>
-            <a href="http://sem1-tema6.maf013.dk/Forside.html" target="_blank" style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; width:100%; height:100%; color:inherit; text-decoration:none;">
-                <img src="fotos/Skærmbillede 2025-09-03 kl. 20.26.24.png" alt="Skærmbillede af Visit Køge" style="max-width:80%; max-height:220px; border-radius:8px; margin-bottom:1rem; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
-                <span style="margin-top:1rem; font-size:1rem; color:#2980b9;">Click to visit the page</span>
+        </article>
+
+        <!-- Slide 2 (Projekt med link) -->
+        <article class="slide clickable-slide">
+            <a href="http://sem1-tema6.maf013.dk/Forside.html" target="_blank" class="image-wrapper">
+                <img src="fotos/Skærmbillede 2025-09-03 kl. 20.26.24.png" alt="Skærmbillede af Visit Køge">
+                <div class="overlay">
+                    <h2>Visit Køge</h2>
+                    <p>Se mit projekt om Køge – klik for at besøge siden</p>
+                </div>
             </a>
         </article>
 
-        <article class="slide" id="s3">Soundstage</article>
-        <article class="slide" id="s4">Projekt 4</article>
-        <article class="slide" id="s5">Projekt 5</article>
+        <!-- Slide 3 -->
+        <article class="slide clickable-slide">
+            <div class="image-wrapper">
+                <img src="fotos/soundstage.png" alt="Soundstage projekt">
+                <div class="overlay">
+                    <h2>Soundstage</h2>
+                    <p>Et spændende projekt med fokus på lyd og design</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Slide 4 -->
+        <article class="slide clickable-slide">
+            <div class="image-wrapper">
+                <img src="fotos/projekt4.png" alt="Projekt 4">
+                <div class="overlay">
+                    <h2>Projekt 4</h2>
+                    <p>Kort beskrivelse af projekt 4</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Slide 5 -->
+        <article class="slide clickable-slide">
+            <div class="image-wrapper">
+                <img src="fotos/projekt5.png" alt="Projekt 5">
+                <div class="overlay">
+                    <h2>Projekt 5</h2>
+                    <p>Kort beskrivelse af projekt 5</p>
+                </div>
+            </div>
+        </article>
+
     </div>
 </section>
 
+<!-- Modal (popup i fuld skærm) -->
+<div id="imageModal" class="modal" onclick="closeModalOutside(event)">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImage" class="modal-content" src="" alt="Fullscreen Image">
+</div>
+
 <style>
+    /* Slider styling */
     .slider-aboutme {
         width: 1200px;
         max-width: 98vw;
@@ -134,15 +160,8 @@ $this->extend('layout');
         padding: 50px 0;
         overflow-y: scroll;
         scroll-snap-type: y mandatory;
-        background: none;
-        box-shadow: none;
     }
-    .slider-aboutme::-webkit-scrollbar {
-        display: none;
-    }
-    .slider-aboutme {
-        scrollbar-width: none;
-    }
+    .slider-aboutme::-webkit-scrollbar { display: none; }
     .slider-aboutme .slides {
         display: flex;
         flex-direction: column;
@@ -158,58 +177,119 @@ $this->extend('layout');
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.7rem;
         background: #eee;
         box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-        transition: transform 0.3s, opacity 0.3s;
         transform: scale(0.96);
-        opacity: 0.78;
+        opacity: 0.85;
+        transition: transform 0.3s, opacity 0.3s;
     }
-    .slider-aboutme .slide:target {
-        transform: scale(1.03);
+    .slider-aboutme .slide:hover {
+        transform: scale(1.02);
         opacity: 1;
     }
-    .wave-line {
-        width: 180px;
-        height: 20px;
-        margin: 10px 0 30px 0;
-        display: block;
+
+    /* Billede + overlay */
+    .image-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    .projects-header .container {
-        max-width: 1200px;
-        padding-left: 2rem;
+    .image-wrapper img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
     }
-    .section-heading {
-        text-align: left;
+    .overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0,0,0,0.90);
+        color: #fff;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        border-radius: 12px;
+        padding: 1rem;
+    }
+    .image-wrapper:hover .overlay {
+        opacity: 1;
     }
 
-    /* Hover-effekt på klikbare bokse */
-    .slider-aboutme .clickable-slide {
+    /* Modal styling med rettelser */
+    .modal {
+        visibility: hidden;
+        opacity: 0;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.3s ease, visibility 0.3s;
+    }
+    .modal.show {
+        visibility: visible;
+        opacity: 1;
+    }
+    .modal-content {
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 12px;
+    }
+    .close {
+        position: absolute;
+        top: 30px;
+        right: 40px;
+        color: #fff;
+        font-size: 40px;
+        font-weight: bold;
         cursor: pointer;
-        transition: box-shadow 0.3s, background 0.3s;
     }
-    .slider-aboutme .clickable-slide:hover,
-    .slider-aboutme .clickable-slide:focus-within {
-        background: #e3f3fc;
-        box-shadow: 0 8px 32px rgba(52,152,219,0.15);
-    }
+    .close:hover { color: #3498db; }
 
     @media (max-width: 1200px) {
         .slider-aboutme {
             width: 100vw;
-            max-width: 100vw;
-            padding: 10px 0;
+            height: auto;
+            padding: 20px 0;
         }
         .slider-aboutme .slide {
-            width: 98vw;
-        }
-        .projects-header .container {
-            padding-left: 1rem;
+            width: 95vw;
+            height: auto;
         }
     }
 </style>
-<br>
-<br>
+
+<script>
+    function openModal(imageSrc) {
+        const modal = document.getElementById("imageModal");
+        modal.classList.add("show");
+        document.getElementById("modalImage").src = imageSrc;
+    }
+
+    function closeModal() {
+        const modal = document.getElementById("imageModal");
+        modal.classList.remove("show");
+    }
+
+    // Luk modal, når man klikker udenfor billedet
+    function closeModalOutside(event) {
+        if (event.target === document.getElementById("imageModal")) {
+            closeModal();
+        }
+    }
+</script>
 
 <section class="quick-links section-padding">
     <div class="container">
