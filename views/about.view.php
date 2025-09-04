@@ -13,6 +13,13 @@ $this->extend('layout');
         <h1 class="page-heading">
             About Me
         </h1>
+        <svg class="wave-line" viewBox="0 0 400 40">
+            <path d="M 50 30 C 100 10, 200 50, 350 20"
+                  fill="none"
+                  stroke="#3498db"
+                  stroke-width="4"
+                  stroke-linecap="round" />
+        </svg>
         <p class="page-intro">
             Get to know more about my journey, skills, and passion for web development. I'm dedicated to creating elegant solutions to complex problems.
         </p>
@@ -24,6 +31,13 @@ $this->extend('layout');
         <div class="about-content">
             <div class="about-text">
                 <h2 class="section-heading">Bio</h2>
+                <svg class="wave-line" viewBox="0 0 400 40">
+                    <path d="M 50 30 C 100 10, 200 50, 350 20"
+                          fill="none"
+                          stroke="#3498db"
+                          stroke-width="4"
+                          stroke-linecap="round" />
+                </svg>
                 <p>
                     Hi, I'm a passionate web developer with a focus on building clean,
                     efficient, and user-friendly applications. I specialize in PHP

@@ -26,3 +26,43 @@
 
 /* Utils */
 @import "utils/utilities.css";
+
+h1, h2, h3, h4, h5, h6,
+.section-heading,
+.page-heading,
+.projects-header,
+.projects-header .container,
+.page-header,
+.page-header .container {
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+h1::after, h2::after, h3::after, h4::after, h5::after, h6::after,
+.section-heading::after,
+.page-heading::after,
+.projects-header::after,
+.page-header::after {
+    content: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    display: none !important;
+}
+
+.wave-line {
+    width: 180px;
+    height: 20px;
+    margin: 10px 0 30px 0;
+    display: block;
+}
+.wave-line path {
+    stroke: #3498db;
+    stroke-width: 4;
+    fill: none;
+    stroke-linecap: round;
+    animation: waveAnim 3s ease-in-out infinite alternate;
+}
+@keyframes waveAnim {
+    0% { d: path("M 50 30 C 100 10, 200 50, 350 20"); }
+    100% { d: path("M 50 20 C 110 40, 210 10, 350 30"); }
+}

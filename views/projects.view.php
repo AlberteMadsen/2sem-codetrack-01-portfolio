@@ -16,34 +16,31 @@ $this->extend('layout');
         <h1 class="page-heading">
             My Projects
         </h1>
-
-        <!-- Bølget linje under overskriften -->
+        <!-- Kun den bølgede SVG! -->
         <svg class="wave-line" viewBox="0 0 400 40">
             <path d="M 50 30 C 100 10, 200 50, 350 20" fill="none" stroke="#3498db" stroke-width="4" stroke-linecap="round"/>
         </svg>
-
+        <!-- INGEN <hr> eller border-bottom her! -->
         <style>
             .wave-line {
-                width: 180px; /* kortere end forsiden */
+                width: 180px;
                 height: 20px;
-                margin: 10px auto 30px; /* centrér under overskriften */
+                margin: 10px auto 30px;
                 display: block;
             }
-
-            /* Animation af bølgen */
-            @keyframes waveAnim {
-                0% {
-                    d: path("M 50 30 C 100 10, 200 50, 350 20");
-                }
-                100% {
-                    d: path("M 50 20 C 110 40, 210 10, 350 30");
-                }
-            }
-
             .wave-line path {
                 animation: waveAnim 3s ease-in-out infinite alternate;
             }
+            @keyframes waveAnim {
+                0% { d: path("M 50 30 C 100 10, 200 50, 350 20"); }
+                100% { d: path("M 50 20 C 110 40, 210 10, 350 30"); }
+            }
+            /* Undgå border-bottom på overskriften! */
+            .page-heading, h1 {
+                border-bottom: none !important;
+            }
         </style>
+
 
 
         <p class="page-intro">
@@ -126,7 +123,19 @@ $this->extend('layout');
 <main>
     <section class="slider" aria-label="Vertikal slider">
         <div class="slides">
-            <article class="slide" id="s1">Guestbook</article>
+            <article class="slide clickable-slide" id="s1">
+                <a href="https://guestbook.hejfremtid.dk/index.php" target="_blank" style="
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    z-index:2;
+    text-decoration:none;
+    color:inherit;
+    ">
+                </a>
+                <span style="font-size:2rem; color:#2980b9;">Click to visit the Guestbook</span>
+            </article>
 
             <article class="slide" id="s2">Iværksætter</article>
             <article class="slide" id="s3">Soundstage</article>
