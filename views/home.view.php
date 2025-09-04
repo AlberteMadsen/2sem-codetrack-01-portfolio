@@ -107,13 +107,18 @@ $this->extend('layout');
 <section class="slider slider-aboutme" aria-label="Vertikal slider">
     <div class="slides">
         <article class="slide" id="s1">Guestbook</article>
-        <article class="slide clickable-slide" id="s2">
-            <a href="http://sem1-tema6.maf013.dk/Forside.html" target="_blank" style="display:flex; flex-direction:column; align-items:center; justify-content:center; width:100%; height:100%; color:inherit; text-decoration:none;">
-                <img src="images/visit-koege.jpg" alt="Visit Køge" style="max-width:80%; max-height:220px; border-radius:8px; margin-bottom:1rem; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
-                <span style="font-size:2rem; font-weight:600;"></span>
-                <span style="margin-top:1rem; font-size:1rem; color:#2980b9;">Klik for at besøge siden</span>
+
+        <article class="slide clickable-slide" id="s2" style="display: flex; flex-direction: row; align-items: center; justify-content: start;">
+            <div class="slide-info" style="flex: 1; padding: 2rem;">
+                <h2>Visit Køge</h2>
+                <h4>Her kan du se mit projekt om Køge, hvor jeg har arbejdet med ...</h4>
+            </div>
+            <a href="http://sem1-tema6.maf013.dk/Forside.html" target="_blank" style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; width:100%; height:100%; color:inherit; text-decoration:none;">
+                <img src="fotos/Skærmbillede 2025-09-03 kl. 20.26.24.png" alt="Skærmbillede af Visit Køge" style="max-width:80%; max-height:220px; border-radius:8px; margin-bottom:1rem; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
+                <span style="margin-top:1rem; font-size:1rem; color:#2980b9;">Click to visit the page</span>
             </a>
         </article>
+
         <article class="slide" id="s3">Soundstage</article>
         <article class="slide" id="s4">Projekt 4</article>
         <article class="slide" id="s5">Projekt 5</article>
