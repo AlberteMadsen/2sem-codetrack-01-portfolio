@@ -140,17 +140,7 @@ $this->extend('layout');
             </article>
 
             <article class="slide" id="s2">Iværksætter</article>
-            <a href="http://styleswitcher.hejfremtid.dk/index.html" target="_blank" style="
-                position:absolute;
-    inset:0;
-    width:100%;
-    height:100%;
-    z-index:2;
-    text-decoration:none;
-    color:inherit;
-    ">
-            </a>
-            <span style="font-size:2rem; color:#2980b9;">Click to visit the Style Switcher</span>
+
 
             <article class="slide" id="s3">Soundstage</article>
             <article class="slide" id="s4">Projekt 4</article>
