@@ -17,7 +17,7 @@ $this->extend('layout');
             <path d="M 50 30 C 100 10, 200 50, 350 20"
                   fill="none"
                   stroke="#3498db"
-                  stroke-width="4"
+                  stroke-width="8"
                   stroke-linecap="round" />
         </svg>
         <p class="page-intro">
@@ -31,13 +31,7 @@ $this->extend('layout');
         <div class="about-content">
             <div class="about-text">
                 <h2 class="section-heading">Bio</h2>
-                <svg class="wave-line" viewBox="0 0 400 40">
-                    <path d="M 50 30 C 100 10, 200 50, 350 20"
-                          fill="none"
-                          stroke="#3498db"
-                          stroke-width="4"
-                          stroke-linecap="round" />
-                </svg>
+
                 <p>
                     Hi, I'm a passionate web developer with a focus on building clean,
                     efficient, and user-friendly applications. I specialize in PHP
@@ -59,8 +53,9 @@ $this->extend('layout');
             </div>
 
             <div class="about-image">
-                <img src="images/profile-portrait.jpg" alt="Headshot of Abigail looking suspicious" class="portrait-image">
+                <img src="fotos/egeskov.png" alt="Picture of Alberte" class="portrait-image">
             </div>
+
         </div>
     </div>
 </section>
@@ -69,14 +64,17 @@ $this->extend('layout');
     <div class="container">
         <h2 class="section-heading">Skills</h2>
         <div class="skill-items">
-            <span class="skill-tag">HTML</span>
-            <span class="skill-tag">CSS</span>
             <span class="skill-tag">Photoshop</span>
             <span class="skill-tag">Illustrator</span>
             <span class="skill-tag">InDesign</span>
-            <span class="skill-tag">Webhosting</span>
+            <span class="skill-tag">Figma</span>
             <span class="skill-tag">Graphic Design</span>
+            <span class="skill-tag">Ideation</span>
             <span class="skill-tag">Project Planning</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+
+
         </div>
     </div>
 </section>

@@ -68,7 +68,7 @@ $this->extend('layout');
                     I bring ideas to life through elegant and efficient code.</p>
             </div>
             <div class="intro-image">
-                <img src="images/profile-landscape.jpg" alt="Headshot of Abigail looking happy" class="profile-image">
+                <img src="fotos/Profil.png" alt="Headshot of Abigail looking happy" class="profile-image">
             </div>
         </div>
     </div>
@@ -92,7 +92,9 @@ $this->extend('layout');
                 <img src="fotos/Portfolie-Fritid.png" alt="Best Grapes">
                 <div class="overlay">
                     <h2>Best Grapes</h2>
-                    <p>Klik for at se billedet i fuld skærm</p>
+                    <p>--Klik for at se billedet i fuld skærm--</p>
+                    <p>Den bedste måde for mig, at lære programmer at kende, er ved at sidde og teste knapperne og finde ud af hvad de forskellige funktioner kan. Ved dette eksempel sad jeg og testede Illustrator, som jeg var nysgerrig på hvad kunne. Dette er et af de første eksempler på mine test.
+                     </p>
                 </div>
             </div>
         </article>
@@ -103,21 +105,24 @@ $this->extend('layout');
                 <img src="fotos/Skærmbillede 2025-09-03 kl. 20.26.24.png" alt="Skærmbillede af Visit Køge">
                 <div class="overlay">
                     <h2>Visit Køge</h2>
-                    <p>Se mit projekt om Køge – klik for at besøge siden</p>
+                    <p>--Se mit projekt om Køge – klik for at besøge siden--</p>
+                    <p>Dette projekt forløb i slutningen af 1. semester.  .OBS. Mobile design</p>
                 </div>
             </a>
         </article>
 
-        <!-- Slide 3 -->
-        <article class="slide clickable-slide">
+        <!-- Slide 3 (Nyt billede med modal fullscreen) -->
+        <article class="slide clickable-slide" onclick="openModal('fotos/Skærmbillede 2025-09-05 kl. 08.37.13.png')">
             <div class="image-wrapper">
-                <img src="fotos/soundstage.png" alt="Soundstage projekt">
+                <img src="fotos/Skærmbillede 2025-09-05 kl. 08.37.13.png" alt="Portfolio Parfume">
                 <div class="overlay">
-                    <h2>Soundstage</h2>
-                    <p>Et spændende projekt med fokus på lyd og design</p>
+                    <h2>Portfolio Parfume</h2>
+                    <p>Klik for at se billedet i fuld skærm</p>
                 </div>
             </div>
         </article>
+
+
 
         <!-- Slide 4 -->
         <article class="slide clickable-slide">
@@ -198,10 +203,12 @@ $this->extend('layout');
         justify-content: center;
     }
     .image-wrapper img {
-        max-width: 100%;
-        max-height: 100%;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         border-radius: 12px;
+
+
     }
     .overlay {
         position: absolute;
@@ -291,6 +298,7 @@ $this->extend('layout');
     }
 </script>
 
+<br>
 <section class="quick-links section-padding">
     <div class="container">
         <h2 class="section-heading">Explore More</h2>

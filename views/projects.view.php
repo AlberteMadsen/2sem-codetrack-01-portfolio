@@ -123,9 +123,10 @@ $this->extend('layout');
 <main>
     <section class="slider" aria-label="Vertikal slider">
         <div class="slides">
+
             <article class="slide clickable-slide" id="s1">
                 <a href="https://guestbook.hejfremtid.dk/index.php" target="_blank" style="
-    position:absolute;
+                position:absolute;
     inset:0;
     width:100%;
     height:100%;
@@ -135,9 +136,22 @@ $this->extend('layout');
     ">
                 </a>
                 <span style="font-size:2rem; color:#2980b9;">Click to visit the Guestbook</span>
+
             </article>
 
             <article class="slide" id="s2">Iværksætter</article>
+            <a href="http://styleswitcher.hejfremtid.dk/index.html" target="_blank" style="
+                position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    z-index:2;
+    text-decoration:none;
+    color:inherit;
+    ">
+            </a>
+            <span style="font-size:2rem; color:#2980b9;">Click to visit the Style Switcher</span>
+
             <article class="slide" id="s3">Soundstage</article>
             <article class="slide" id="s4">Projekt 4</article>
             <article class="slide" id="s5">Projekt 5</article>
