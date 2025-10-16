@@ -68,7 +68,7 @@ $this->extend('layout');
                     I bring ideas to life through elegant and efficient code.</p>
             </div>
             <div class="intro-image">
-                <img src="fotos/Profil.png" alt="Headshot of Abigail looking happy" class="profile-image">
+                <img src="fotos/profil-alberte.jpeg" alt="Headshot of Alberte looking happy" class="profile-image">
             </div>
         </div>
     </div>
