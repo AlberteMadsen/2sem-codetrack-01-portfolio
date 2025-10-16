@@ -43,29 +43,54 @@ class ProjectController extends Controller
     {
         return [
             new ProjectDto(
-                title: 'Portfolio Website',
-                description: 'A modern portfolio website built from scratch with PHP. Features a clean, responsive design with a mobile-first approach, optimized performance, and maintainable object-oriented code following the MVC pattern. Includes custom form handling with rate limiting and a modular template system.',
-                technologies: 'PHP, HTML5, CSS3, Responsive Design',
-                image: 'images/projects/portfolio.jpg',
-                code: 'https://github.com/madh-zealand/2sem-codetrack-01-portfolio',
-                link: '#portfolio',
-            ),
-            new ProjectDto(
-                title: 'Digital Guestbook',
+                title: 'Digital guestbook',
                 description: 'An interactive guestbook application that allows visitors to leave messages and engage with the community. Features user-friendly forms with validation, spam protection, and a clean interface. Messages are stored securely and displayed in a paginated format.',
                 technologies: 'PHP, MySQL, CSS Grid/Flexbox, Form Validation',
-                image: 'images/projects/guestbook.jpg',
-                code: 'https://github.com/madh-zealand/tba',
-                link: '#guestbook',
+                image: 'fotos/bog.png',
+                code: 'https://github.com/madh-zealand/2sem-codetrack-01-portfolio',
+                link: 'https://guestbook.hejfremtid.dk',
             ),
             new ProjectDto(
-                title: 'Browser Game',
+                title: 'Style Switcher',
+                description: 'An interactive guestbook application that allows visitors to leave messages and engage with the community. Features user-friendly forms with validation, spam protection, and a clean interface. Messages are stored securely and displayed in a paginated format.',
+                technologies: 'PHP, MySQL, CSS Grid/Flexbox, Form Validation',
+                image: 'fotos/Kontakt.png',
+                code: 'https://github.com/madh-zealand/tba',
+                link: 'https://styleswitcher.hejfremtid.dk/index.html',
+            ),
+            new ProjectDto(
+                title: 'A/B test',
                 description: 'A fun and engaging browser-based game built with vanilla JavaScript. Implements game mechanics using the requestAnimationFrame API, features smooth animations, collision detection, and a scoring system. Demonstrates strong understanding of DOM manipulation and event handling.',
                 technologies: 'JavaScript, HTML Canvas, CSS Animations',
-                image: 'images/projects/webgame.jpg',
+                image: 'fotos/a-b.png',
                 code: 'https://github.com/madh-zealand/tba',
-                link: '#webgame',
-            )
+                link: 'ab-test.hejfremtid.dk',
+            ),
+            new ProjectDto(
+                title: 'Project-Presentation',
+                description: 'An interactive guestbook application that allows visitors to leave messages and engage with the community. Features user-friendly forms with validation, spam protection, and a clean interface. Messages are stored securely and displayed in a paginated format.',
+                technologies: 'PHP, MySQL, CSS Grid/Flexbox, Form Validation',
+                image: 'fotos/Presentation.png',
+                code: 'https://github.com/madh-zealand/2sem-codetrack-01-portfolio',
+                link: 'https://project-presentation.hejfremtid.dk',
+            ),
+            new ProjectDto(
+                title: 'Mini CRM',
+                description: 'An interactive guestbook application that allows visitors to leave messages and engage with the community. Features user-friendly forms with validation, spam protection, and a clean interface. Messages are stored securely and displayed in a paginated format.',
+                technologies: 'PHP, MySQL, CSS Grid/Flexbox, Form Validation',
+                image: 'fotos/circle.png',
+                code: 'https://github.com/madh-zealand/2sem-codetrack-01-portfolio',
+                link: 'mini-crm.hejfremtid.dk',
+            ),
+            new ProjectDto(
+                title: 'UI-Widget generator',
+                description: 'An interactive guestbook application that allows visitors to leave messages and engage with the community. Features user-friendly forms with validation, spam protection, and a clean interface. Messages are stored securely and displayed in a paginated format.',
+                technologies: 'PHP, MySQL, CSS Grid/Flexbox, Form Validation',
+                image: 'fotos/ui.png',
+                code: 'https://github.com/madh-zealand/2sem-codetrack-01-portfolio',
+                link: 'https://ui-widget.hejfremtid.dk',
+            ),
+
         ];
     }
 }
