@@ -64,7 +64,7 @@ class ProjectController extends Controller
                 technologies: 'JavaScript, HTML Canvas, CSS Animations',
                 image: 'fotos/a-b.png',
                 code: 'https://github.com/madh-zealand/tba',
-                link: 'ab-test.hejfremtid.dk',
+                link: 'http://2sem-codetrack-04-ab-test.test/',
             ),
             new ProjectDto(
                 title: 'Project-Presentation',
@@ -80,7 +80,7 @@ class ProjectController extends Controller
                 technologies: 'PHP, MySQL, CSS Grid/Flexbox, Form Validation',
                 image: 'fotos/circle.png',
                 code: 'https://github.com/madh-zealand/2sem-codetrack-01-portfolio',
-                link: 'mini-crm.hejfremtid.dk',
+                link: 'http://2sem-codetrack-06-mini-crm.test/login',
             ),
             new ProjectDto(
                 title: 'UI-Widget generator',
@@ -89,6 +89,14 @@ class ProjectController extends Controller
                 image: 'fotos/ui.png',
                 code: 'https://github.com/madh-zealand/2sem-codetrack-01-portfolio',
                 link: 'https://ui-widget.hejfremtid.dk',
+            ),
+            new ProjectDto(
+                title: 'Visual-Novel',
+                description: 'An interactive guestbook application that allows visitors to leave messages and engage with the community. Features user-friendly forms with validation, spam protection, and a clean interface. Messages are stored securely and displayed in a paginated format.',
+                technologies: 'PHP, MySQL, CSS Grid/Flexbox, Form Validation',
+                image: 'fotos/Visuel.avif',
+                code: 'https://github.com/madh-zealand/2sem-codetrack-01-portfolio',
+                link: 'https://visual-novel.hejfremtid.dk',
             ),
 
         ];
