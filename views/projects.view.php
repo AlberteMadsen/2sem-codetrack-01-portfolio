@@ -37,7 +37,7 @@ $this->extend('layout');
             }
         </style>
         <p class="page-intro">
-            Welcome to my project showcase! Here you'll find a collection of my recent work, highlighting my skills in web development and software engineering. Each project demonstrates my commitment to creating clean, efficient, and user-friendly solutions.
+            Welcome to my project showcase! Here’s a look at what I’ve been working on! Each project represents a step in my journey as a developer — where I learn, experiment, and create practical solutions to real problems.
         </p>
     </div>
 </section>

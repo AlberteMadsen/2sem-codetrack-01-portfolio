@@ -61,11 +61,13 @@ $this->extend('layout');
                           stroke-width="4"
                           stroke-linecap="round" />
                 </svg>
-                <p>I'm a passionate web developer with a particular interest in user-friendly design and clean code.
-                    Through my projects, I strive to create solutions that not only work well
-                    but also make a real difference for users.</p>
-                <p>With a keen eye for detail and a commitment to staying current with web technologies,
-                    I bring ideas to life through elegant and efficient code.</p>
+                <p>I’m a positive and curious person who thrives in a good team dynamic. I love collaborating with others, sharing ideas, and creating a space where everyone feels included and inspired. My curiosity often turns into a stream of “why” and “what if” questions — not because I doubt, but because I’m eager to understand and explore new perspectives.
+                    I’m driven by both the creative spark of an idea and the satisfaction of seeing a project come to life. I like to start strong and stay ahead of deadlines — I’d rather be prepared than stressed at the last minute. That mindset helps me keep focus and deliver high-quality results.
+                    </p>
+            <p>
+                In the long run, I hope to be part of a creative team where collaboration and trust are key — and maybe one day lead such a team myself. I believe good leadership is about balance: structure, positivity, and making sure everyone feels heard.
+                People often describe me as punctual, energetic, and easy to talk to — someone who brings both focus and good vibes to any project..
+            </p>
             </div>
             <div class="intro-image">
                 <img src="fotos/profil-alberte.jpeg" alt="Headshot of Alberte looking happy" class="profile-image">
@@ -99,16 +101,17 @@ $this->extend('layout');
             </div>
         </article>
 
-        <!-- Slide 2 (Projekt med link) -->
-        <article class="slide clickable-slide">
-            <a href="http://sem1-tema6.maf013.dk/Forside.html" target="_blank" class="image-wrapper">
-                <img src="fotos/Skærmbillede 2025-09-03 kl. 20.26.24.png" alt="Skærmbillede af Visit Køge">
+        <!-- Slide 1 (Billede med modal) -->
+        <article class="slide clickable-slide" onclick="openModal('fotos/face.png')">
+            <div class="image-wrapper">
+                <img src="fotos/face.png" alt="Best Grapes">
                 <div class="overlay">
-                    <h2>Visit Køge</h2>
-                    <p>--Se mit projekt om Køge – klik for at besøge siden--</p>
-                    <p>Dette projekt forløb i slutningen af 1. semester.  .OBS. Mobile design</p>
+                    <h2>Best Grapes</h2>
+                    <p>--Klik for at se billedet i fuld skærm--</p>
+                    <p>Den bedste måde for mig, at lære programmer at kende, er ved at sidde og teste knapperne og finde ud af hvad de forskellige funktioner kan. Ved dette eksempel sad jeg og testede Illustrator, som jeg var nysgerrig på hvad kunne. Dette er et af de første eksempler på mine test.
+                    </p>
                 </div>
-            </a>
+            </div>
         </article>
 
         <!-- Slide 3 (Nyt billede med modal fullscreen) -->
@@ -125,9 +128,9 @@ $this->extend('layout');
 
 
         <!-- Slide 4 -->
-        <article class="slide clickable-slide">
+        <article class="slide clickable-slide" onclick="openModal('fotos/plakat.png')">
             <div class="image-wrapper">
-                <img src="fotos/projekt4.png" alt="Projekt 4">
+                <img src="fotos/plakat.png" alt="Projekt 4">
                 <div class="overlay">
                     <h2>Projekt 4</h2>
                     <p>Kort beskrivelse af projekt 4</p>
@@ -135,16 +138,18 @@ $this->extend('layout');
             </div>
         </article>
 
-        <!-- Slide 5 -->
-        <article class="slide clickable-slide">
+        <!-- Slide 4 -->
+        <article class="slide clickable-slide" onclick="openModal('fotos/poster.png')">
             <div class="image-wrapper">
-                <img src="fotos/projekt5.png" alt="Projekt 5">
+                <img src="fotos/poster.png" alt="Projekt 5">
                 <div class="overlay">
-                    <h2>Projekt 5</h2>
+                    <h2>Projekt 4</h2>
                     <p>Kort beskrivelse af projekt 5</p>
                 </div>
             </div>
         </article>
+
+
 
     </div>
 </section>

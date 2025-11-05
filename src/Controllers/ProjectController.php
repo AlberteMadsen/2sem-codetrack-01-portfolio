@@ -106,6 +106,15 @@ class ProjectController extends Controller
                 code: 'https://github.com/madh-zealand/2sem-codetrack-01-portfolio',
                 link: 'https://visual-novel.hejfremtid.dk',
             ),
+            new ProjectDto(
+                title: 'Storyboard Viewer',
+                description: 'This project was a lot fun to make. I made two new view-settings 1 + 4. I also made it remember what view-setting you was on last time. So if you where on view-setting 2 and you refresh the page, then you are going to tha same view-setting. ',
+                technologies: 'The project started on 03/11-25',
+                image: 'fotos/Storyboard.avif',
+                code: 'https://github.com/madh-zealand/2sem-codetrack-01-portfolio',
+                link: 'http://storyboard.hejfremtid.dk',
+            ),
+
 
         ];
     }

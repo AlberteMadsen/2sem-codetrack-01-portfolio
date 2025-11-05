@@ -16,7 +16,7 @@ $this->extend('layout');
             Get in Touch
         </h1>
         <p class="page-intro">
-            Have a question or want to collaborate? I'd love to hear from you. Feel free to reach out using the form below or through my social media channels.
+            Have a question? I'd love to hear from you. Feel free to reach out using the form below or through my Phonenumber or E-mail address.
         </p>
     </div>
 </section>
@@ -52,7 +52,7 @@ $this->extend('layout');
                             Location:
                         </strong>
                         <span>
-                            Tune, Denmark
+                            Køge, Denmark
                         </span>
                     </li>
                 </ul>

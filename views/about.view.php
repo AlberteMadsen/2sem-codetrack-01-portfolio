@@ -21,7 +21,7 @@ $this->extend('layout');
                   stroke-linecap="round" />
         </svg>
         <p class="page-intro">
-            Get to know more about my journey, skills, and passion for web development. I'm dedicated to creating elegant solutions to complex problems.
+            Here you get to know more about my journey, skills, and passion for web development.
         </p>
     </div>
 </section>
@@ -33,26 +33,21 @@ $this->extend('layout');
                 <h2 class="section-heading">Bio</h2>
 
                 <p>
-                    Hi, I'm a passionate web developer with a focus on building clean,
-                    efficient, and user-friendly applications. I specialize in PHP
-                    development and modern web technologies, with a particular interest
-                    in creating robust back-end solutions.
+                    I’ve always been a creative thinker with a bit of a “popcorn brain” — full of spontaneous ideas and new directions to explore. As a multimedia designer, I’m especially passionate about concept development and the visual side of design — how colors, shapes, and imagery can influence people in the real world.
                 </p>
                 <p>
-                    My journey in web development began with a fascination for problem-solving
-                    and has evolved into a deep appreciation for well-structured, maintainable code.
-                    I believe in writing code that not only works but is also easy to understand
-                    and maintain.
+                    My process is intuitive and playful, especially in the early stages of a project where everything is open and ideas can take any shape. I love that part — where creativity flows freely, and every thought could become something meaningful.
                 </p>
                 <p>
-                    When I'm not coding, I enjoy keeping up with the latest tech trends,
-                    contributing to open-source projects, and sharing knowledge with the
-                    developer community. I'm particularly excited about modern PHP practices,
-                    test-driven development, and building scalable applications.
+                    What makes me unique is my ability to connect creativity with people — I naturally think about group dynamics, emotions, and how ideas fit into real contexts. At the same time, I approach every project with a professional mindset, keeping deadlines and client goals in focus.
+                    In the future, I hope to grow even more in the idea development phase, especially within fields like advertising or creative communication — places where I can push boundaries, experiment, and turn fresh ideas into powerful concepts.
                 </p>
             </div>
 
             <div class="about-image">
+               <br>
+                <br>
+                <br>
                 <img src="fotos/egeskov.png" alt="Picture of Alberte" class="portrait-image">
             </div>
 
