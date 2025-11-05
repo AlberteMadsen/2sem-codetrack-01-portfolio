@@ -101,14 +101,14 @@ $this->extend('layout');
             </div>
         </article>
 
-        <!-- Slide 1 (Billede med modal) -->
+        <!-- Slide 2 (Billede med modal) -->
         <article class="slide clickable-slide" onclick="openModal('fotos/face.png')">
             <div class="image-wrapper">
                 <img src="fotos/face.png" alt="Best Grapes">
                 <div class="overlay">
                     <h2>Best Grapes</h2>
                     <p>--Klik for at se billedet i fuld skærm--</p>
-                    <p>Den bedste måde for mig, at lære programmer at kende, er ved at sidde og teste knapperne og finde ud af hvad de forskellige funktioner kan. Ved dette eksempel sad jeg og testede Illustrator, som jeg var nysgerrig på hvad kunne. Dette er et af de første eksempler på mine test.
+                    <p>Jeg blev inspireret på nettet, til at lave en animation i Figma - Her har jeg lavet en animation, som skifter humør, når man trykker på den. Efter jeg lærte at animere i Figma, har jeg eksperimenteret mere og har opdaget flere muligheder med animationerne.
                     </p>
                 </div>
             </div>
@@ -120,7 +120,10 @@ $this->extend('layout');
                 <img src="fotos/Skærmbillede 2025-09-05 kl. 08.37.13.png" alt="Portfolio Parfume">
                 <div class="overlay">
                     <h2>Portfolio Parfume</h2>
-                    <p>Klik for at se billedet i fuld skærm</p>
+                    <p>--Klik for at se billedet i fuld skærm--</p>
+                    <p>
+                        Jeg blev fanget af, at sidde i Illustrator og lavede denne kreation, hvor jeg ahr kombineret flere forskellige verdener og effekter, for at skabe denne illusion.
+                    </p>
                 </div>
             </div>
         </article>
@@ -132,8 +135,11 @@ $this->extend('layout');
             <div class="image-wrapper">
                 <img src="fotos/plakat.png" alt="Projekt 4">
                 <div class="overlay">
-                    <h2>Projekt 4</h2>
-                    <p>Kort beskrivelse af projekt 4</p>
+                    <h2>Mockup med 2 plakater</h2>
+                    <p>--Klik for at se billedet i fuld skærm--</p>
+                    <p>
+                        I min fritid bruger jeg en masse tid på, at lave plakater og udfolde mig kreativt. Her har jeg brugt mine plakater til, at øve mig på mockups i Photoshop.
+                    </p>
                 </div>
             </div>
         </article>
@@ -143,8 +149,11 @@ $this->extend('layout');
             <div class="image-wrapper">
                 <img src="fotos/poster.png" alt="Projekt 5">
                 <div class="overlay">
-                    <h2>Projekt 4</h2>
-                    <p>Kort beskrivelse af projekt 5</p>
+                    <h2>Mockup med to plakater</h2>
+                    <p>--Klik for at se billedet i fuld skærm--</p>
+                    <p>
+                        Her har jeg igen lavet en mockup, så jeg fik øvet, at lave en mockup efter en pause fra at lave mockup i photoshop. Her kan man se skyggen fra mockup'en, som er indikator for, at mockup'en er lavet rigtigt.
+                    </p>
                 </div>
             </div>
         </article>
