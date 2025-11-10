@@ -94,8 +94,8 @@ $this->extend('layout');
                 <img src="fotos/Portfolie-Fritid.png" alt="Best Grapes">
                 <div class="overlay">
                     <h2>Best Grapes</h2>
-                    <p>--Klik for at se billedet i fuld skærm--</p>
-                    <p>Den bedste måde for mig, at lære programmer at kende, er ved at sidde og teste knapperne og finde ud af hvad de forskellige funktioner kan. Ved dette eksempel sad jeg og testede Illustrator, som jeg var nysgerrig på hvad kunne. Dette er et af de første eksempler på mine test.
+                    <p>--Click the picture for fullscreen--</p>
+                    <p>The best way for me to learn programs is by sitting down, testing the buttons, and figuring out what the different functions can do. In this example, I was testing Illustrator because I was curious about what it could do.
                      </p>
                 </div>
             </div>
@@ -106,9 +106,9 @@ $this->extend('layout');
             <div class="image-wrapper">
                 <img src="fotos/face.png" alt="Best Grapes">
                 <div class="overlay">
-                    <h2>Best Grapes</h2>
-                    <p>--Klik for at se billedet i fuld skærm--</p>
-                    <p>Jeg blev inspireret på nettet, til at lave en animation i Figma - Her har jeg lavet en animation, som skifter humør, når man trykker på den. Efter jeg lærte at animere i Figma, har jeg eksperimenteret mere og har opdaget flere muligheder med animationerne.
+                    <h2>Emotions</h2>
+                    <p>--Click the picture for fullscreen--</p>
+                    <p>I was inspired online to create an animation in Figma. Here I made an animation that changes expression when you click on it. After learning how to animate in Figma, I have experimented more and discovered more possibilities with animations.
                     </p>
                 </div>
             </div>
@@ -119,10 +119,10 @@ $this->extend('layout');
             <div class="image-wrapper">
                 <img src="fotos/Skærmbillede 2025-09-05 kl. 08.37.13.png" alt="Portfolio Parfume">
                 <div class="overlay">
-                    <h2>Portfolio Parfume</h2>
-                    <p>--Klik for at se billedet i fuld skærm--</p>
+                    <h2>Portfolio perfume</h2>
+                    <p>--Click the picture for fullscreen--</p>
                     <p>
-                        Jeg blev fanget af, at sidde i Illustrator og lavede denne kreation, hvor jeg ahr kombineret flere forskellige verdener og effekter, for at skabe denne illusion.
+                        I got caught up working in Illustrator and created this piece, where I combined several different worlds and effects to create this illusion.
                     </p>
                 </div>
             </div>
@@ -135,29 +135,48 @@ $this->extend('layout');
             <div class="image-wrapper">
                 <img src="fotos/plakat.png" alt="Projekt 4">
                 <div class="overlay">
-                    <h2>Mockup med 2 plakater</h2>
-                    <p>--Klik for at se billedet i fuld skærm--</p>
+                    <h2>Mockup with two posters</h2>
+                    <p>--Click the picture for fullscreen--</p>
                     <p>
-                        I min fritid bruger jeg en masse tid på, at lave plakater og udfolde mig kreativt. Her har jeg brugt mine plakater til, at øve mig på mockups i Photoshop.
+                        In my spare time, I spend a lot of time creating posters and expressing myself creatively. Here, I used my posters to practice mockups in Photoshop.
                     </p>
                 </div>
             </div>
         </article>
 
-        <!-- Slide 4 -->
+        <!-- Slide 5 -->
+        <article class="slide clickable-slide" onclick="openModal('fotos/clock.png')">
+            <div class="image-wrapper">
+                <img src="fotos/clock.png" alt="Projekt 5">
+                <div class="overlay">
+                    <h2>World-Clock</h2>
+                    <p>--Click the picture for fullscreen--</p>
+                    <p>
+                        In this project, I created everything completely from scratch without help. I know there are some issues with HTTPS on my URL, which I unfortunately can’t fix on my own this time. In addition, in this project I practiced creating projects from scratch using AI, and then reading and trying to understand the code.
+                    </p>
+
+                    <!-- Klikbar knap til hjemmesiden -->
+                    <a href="https://worldclock.hejfremtid.dk" target="_blank" class="visit-btn">
+                       Visit Website
+                    </a>
+                </div>
+            </div>
+        </article>
+
+
+        <!-- Slide 6 -->
         <article class="slide clickable-slide" onclick="openModal('fotos/poster.png')">
             <div class="image-wrapper">
                 <img src="fotos/poster.png" alt="Projekt 5">
                 <div class="overlay">
-                    <h2>Mockup med to plakater</h2>
-                    <p>--Klik for at se billedet i fuld skærm--</p>
+                    <h2>Mockup with two posters</h2>
+                    <p>--Click the picture for fullscreen--</p>
                     <p>
-                        Her har jeg igen lavet en mockup, så jeg fik øvet, at lave en mockup efter en pause fra at lave mockup i photoshop. Her kan man se skyggen fra mockup'en, som er indikator for, at mockup'en er lavet rigtigt.
+                        Here, I once again created a mockup to practice making one after taking a break from working with mockups in Photoshop. You can see the shadow from the mockup, which indicates that it has been made correctly.
                     </p>
                 </div>
             </div>
         </article>
-
 
 
     </div>
@@ -326,15 +345,15 @@ $this->extend('layout');
         <div class="links-grid">
             <a href="/projects" class="link-card">
                 <h3>Projects</h3>
-                <p>See examples of my recent projects and solutions</p>
+                <p>See examples of my recent projects and solutions from school</p>
             </a>
             <a href="/about" class="link-card">
                 <h3>About</h3>
-                <p>Learn more about my background and technical skills</p>
+                <p>Learn more about my background and technical skills - and interest</p>
             </a>
             <a href="/contact" class="link-card">
                 <h3>Contact</h3>
-                <p>Let's discuss your next project</p>
+                <p>Let's discuss your next project together</p>
             </a>
         </div>
     </div>

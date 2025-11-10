@@ -13,13 +13,28 @@ $this->extend('layout');
         <h1 class="page-heading">
             About Me
         </h1>
+        <!-- Kun den bølgede SVG! -->
         <svg class="wave-line" viewBox="0 0 400 40">
-            <path d="M 50 30 C 100 10, 200 50, 350 20"
-                  fill="none"
-                  stroke="#3498db"
-                  stroke-width="8"
-                  stroke-linecap="round" />
+            <path d="M 50 30 C 100 10, 200 50, 350 20" fill="none" stroke="#3498db" stroke-width="4" stroke-linecap="round"/>
         </svg>
+        <style>
+            .wave-line {
+                width: 180px;
+                height: 20px;
+                margin: 10px auto 30px;
+                display: block;
+            }
+            .wave-line path {
+                animation: waveAnim 3s ease-in-out infinite alternate;
+            }
+            @keyframes waveAnim {
+                0% { d: path("M 50 30 C 100 10, 200 50, 350 20"); }
+                100% { d: path("M 50 20 C 110 40, 210 10, 350 30"); }
+            }
+            .page-heading, h1 {
+                border-bottom: none !important;
+            }
+        </style>
         <p class="page-intro">
             Here you get to know more about my journey, skills, and passion for web development.
         </p>
@@ -59,13 +74,15 @@ $this->extend('layout');
     <div class="container">
         <h2 class="section-heading">Skills</h2>
         <div class="skill-items">
-            <span class="skill-tag">Photoshop</span>
-            <span class="skill-tag">Illustrator</span>
-            <span class="skill-tag">InDesign</span>
             <span class="skill-tag">Figma</span>
             <span class="skill-tag">Graphic Design</span>
             <span class="skill-tag">Ideation</span>
             <span class="skill-tag">Project Planning</span>
+            <span class="skill-tag">Creativity</span>
+            <span class="skill-tag">Photoshop</span>
+            <span class="skill-tag">Illustrator</span>
+            <span class="skill-tag">InDesign</span>
+            <span class="skill-tag">Graphic Design</span>
             <span class="skill-tag">HTML</span>
             <span class="skill-tag">CSS</span>
 
